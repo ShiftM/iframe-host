@@ -29,8 +29,13 @@
         new YT.Player("player", {
           videoId: videoId,
           playerVars: {
-            autoplay: 0,
-            playsinline: 1,
+          autoplay: 0,
+          playsinline: 1,
+          rel: 0,        // Hides related videos from other channels
+          modestbranding: 1,
+          fs: 1,
+          controls: 1,
+          showinfo: 0,
           },
         });
       }
